@@ -7,7 +7,7 @@ Public artifacts for an isolated spare-board OTA experiment. These are bench bui
 - **index.json:** browser-readable bench catalog, intersected with published prereleases on this repository.
 - **manifest-2.txt / .sig:** exact canonical manifest bytes and P-256/SHA-256 P1363 signature (hex). Public verification key is included.
 
-The controller generates its own update authorization key in NVS and prints it only to its USB console. No Wi-Fi password, device update key, private signing key, private project checkout or device backup is published here.
+From beta.3 onward, the webpage obtains a fresh boot-scoped authorization token automatically from the controller on the trusted home LAN. No key entry, browser pairing or USB lookup is required. Anyone who can open that controller page can explicitly install a compatible signed bench update. Legacy beta.1/beta.2 used a USB-console key; their NVS key is retained for fallback compatibility. No Wi-Fi password, runtime authorization token, private signing key, private project checkout or device backup is published here.
 
 The webpage downloads the image from GitHub Pages, then sends bounded chunks to the spare, which verifies the signed source transition and whole-image hash before activation. It confirms the new ELF, transaction, accepted startup and preserved application-settings record after reboot.
 
@@ -20,3 +20,7 @@ Keep USB recovery available. These files are not a first-install factory image a
 Wrong device-key and invalid-signature requests were rejected before flash admission. See [sanitized acceptance data](acceptance.json), [update available](update-available.png), and [successful completion](update-complete.png).
 
 This result covers the isolated bench happy path. Power-loss/rollback fault injection, production motion admission, operational UI integration and unattended deployment remain separate qualification work.
+
+## Automatic authorization (beta.3+)
+
+Beta.3 introduces the automatic session flow. Beta.4 provides the next compatible release for testing that flow without entering any key. Signed-image verification and explicit install confirmation remain. Acceptance results will be appended after the real OTA tests.

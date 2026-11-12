@@ -21,6 +21,28 @@
       "slot_headroom": 471280,
       "profile": "bench-ota-v1",
       "servo_operations": false
+    },
+    {
+      "build": 3,
+      "version": "0.1.0-beta.3",
+      "elf": "a19afb15b8cbe7a0d87095b98cddd91e59f20ca3cc2fbda7a708e86a3e9c8439",
+      "sha256": "5a98fd9fa1372a1033d43560b5c05d0a06a0074206dfc21716563e376f42d5dc",
+      "size": 840720,
+      "slot_headroom": 470000,
+      "profile": "bench-ota-v1",
+      "automatic_authorization": true,
+      "servo_operations": false
+    },
+    {
+      "build": 4,
+      "version": "0.1.0-beta.4",
+      "elf": "ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42",
+      "sha256": "4b8c25b67ea88c562a07d4173aa095818ccbe12257c8abc80b45da3526a84869",
+      "size": 840720,
+      "slot_headroom": 470000,
+      "profile": "bench-ota-v1",
+      "automatic_authorization": true,
+      "servo_operations": false
     }
   ]
 }
