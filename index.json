@@ -1,0 +1,13 @@
+{
+  "schema": "telescope-cover-bench-catalog/1",
+  "releases": [
+    {
+      "build": 2,
+      "tag": "v0.1.0-beta.2",
+      "application": "bench-2.bin",
+      "manifest": "product=telescope-cover-ota-bench\nprotocol=1\nlayout=cover-4mb-v1\nsettings=preserve-cover-app-v1\nsource_build=1\nsource_elf=194f8b974f3790a171eee7538dfb3d45213d17548c3d85e51e5dbc1b1d36801d\ntarget_build=2\ntarget_elf=b974c4969af32919d6c2f06c3a67b7a74c07a31bcad3b1a77b3885c63e6c8d7a\nsize=839440\nsha256=137539eca7cd32948f39a39c672cd411b9c5be8b059e585e3296c2fb39cb3218\n",
+      "signature": "19e5e1f9b2021c02dc202287f85c6166d37f0668f7bcc289a91407caec8f4dea4c9183092fb09e5883c09f5bf978f55650065bdb3ab13c47306ee58d933604e5",
+      "notes": "Isolated spare-board bench update from beta.1 to beta.2. Servo and telescope code are excluded. Tests discovery, signed transfer, inactive-slot activation, reboot and settings preservation."
+    }
+  ]
+}

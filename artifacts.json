@@ -1,0 +1,26 @@
+{
+  "test_only": true,
+  "production_qualified": false,
+  "artifacts": [
+    {
+      "build": 1,
+      "version": "0.1.0-beta.1",
+      "size": 839440,
+      "elf": "194f8b974f3790a171eee7538dfb3d45213d17548c3d85e51e5dbc1b1d36801d",
+      "sha256": "bce8ffb8c854c34fd33ad2adb84d3bb69311c17c6b5ab1d0583ece22f16406d6",
+      "slot_headroom": 471280,
+      "profile": "bench-ota-v1",
+      "servo_operations": false
+    },
+    {
+      "build": 2,
+      "version": "0.1.0-beta.2",
+      "size": 839440,
+      "elf": "b974c4969af32919d6c2f06c3a67b7a74c07a31bcad3b1a77b3885c63e6c8d7a",
+      "sha256": "137539eca7cd32948f39a39c672cd411b9c5be8b059e585e3296c2fb39cb3218",
+      "slot_headroom": 471280,
+      "profile": "bench-ota-v1",
+      "servo_operations": false
+    }
+  ]
+}
