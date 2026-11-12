@@ -2,6 +2,14 @@
   "schema": "telescope-cover-controller-catalog/1",
   "releases": [
     {
+      "build": 12,
+      "tag": "v0.1.0-beta.12",
+      "application": "controller-12.bin",
+      "manifest": "product=telescope-cover\nprotocol=browser-signed-v1\nlayout=cover-4mb-v1\nmotion=native-multiturn-v1\nstartup=inspect-only-v1\nsettings=preserve-cover-v1\nsource_build=11\nsource_elf=a01f2b79fe66a3dfcc6b459b8536ef68627ddc542c543a493b044714fc31db21\ntarget_build=12\ntarget_elf=7f0e2bca8c13bbe476452bd922b1ebf3a52912dbbc23a06400467970074d9c21\nsize=1187888\nsha256=b114b063b3ff41a67480001b85e2a70904f4e5d707db9d46de44f1cd3102658e\n",
+      "signature": "7780d5f42160171821315e82c5da33e2333b91302c80ba72049c85d4414fdf203f310c24a713988d503f072ac445466476667d165a50ada05615f17e7fe62a05",
+      "notes": "Warning-confirmed download/install/reboot test from beta.11. Check the warning to confirm the mechanism is secured; servo power or verification is not required. Active motion still blocks updates, and normal servo checks remain required for motion after restart. Production qualification is pending."
+    },
+    {
       "build": 10,
       "tag": "v0.1.0-beta.10",
       "application": "controller-10.bin",

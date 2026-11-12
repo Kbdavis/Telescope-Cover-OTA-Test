@@ -42,3 +42,9 @@ The complete controller is being qualified separately from the isolated bench fi
 The installed receiver still requires a powered, verified native servo and honest stationary CLOSED/calibration evidence. An unpowered spare will reject installation at admission; no safety checks have been bypassed. Powered full-workload update/reboot/rollback and cold-start qualification remain pending. The production controller has not been modified.
 
 `controller-10-source.tar.gz` contains the exact curated firmware source; `controller-10-notices.zip` retains project and dependency notices. `controller-10-release.json` records the source, image hashes and test-only scope. The original bench catalog and binaries retain their existing authority and identities.
+
+## Warning-confirmed updates (beta.11 → beta.12)
+
+The owner requested a warning checkbox instead of powered-servo/CLOSED/calibration admission for browser updates. Beta.11 is the USB bootstrap on the spare; beta.12 is its signed public follow-up for end-to-end testing. After confirming that the mechanism is physically secured and the telescope is safe, updates may proceed with the servo unpowered, disconnected or unverified. Active motion/hold, maintenance conflicts, network loss, signature/hash failure and insufficient memory still block or stop an update. Firmware updates never establish motion readiness or rewrite servo configuration. An unavailable servo keeps motion disabled after restart.
+
+The Firmware updates panel now displays actionable controller reasons directly, and a missing acknowledgement is rejected with an instruction to check the warning. The earlier beta.9/10 powered-servo restriction is superseded in this new receiver. Production hardware remains unchanged.
