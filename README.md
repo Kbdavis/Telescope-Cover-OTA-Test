@@ -23,4 +23,6 @@ This result covers the isolated bench happy path. Power-loss/rollback fault inje
 
 ## Automatic authorization (beta.3+)
 
-Beta.3 introduces the automatic session flow. Beta.4 provides the next compatible release for testing that flow without entering any key. Signed-image verification and explicit install confirmation remain. Acceptance results will be appended after the real OTA tests.
+Beta.3 introduces the automatic session flow. Beta.4 provides the next compatible release for testing that flow without entering any key. Signed-image verification and explicit install confirmation remain. Real acceptance passed: legacy beta.2 migrated to beta.3, then beta.3 → beta.4 completed from the webpage with no key-file argument, manual key input or pairing. Reboot, exact target, matching transaction and unchanged settings were confirmed. Invalid/missing authorization, foreign session origin, missing install confirmation, invalid signature and stale post-reboot token were rejected.
+
+The first keyless attempt lost its LAN connection and aborted at 8,064 bytes before activation; after one deliberate recovery restart, the fresh retry completed in 257.186 seconds. The connection-loss cause remains unestablished. See [full sanitized result](acceptance-auto-auth.json), [keyless completion](automatic-update-complete.png), and [fresh page without a key field](automatic-update-page.png).

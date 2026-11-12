@@ -1,0 +1,50 @@
+{
+  "test": "automatic-trusted-lan-update-authorization",
+  "date": "2026-11-12",
+  "passed": true,
+  "simulated": false,
+  "legacy_migration": {
+    "source": "0.1.0-beta.2",
+    "target": "0.1.0-beta.3",
+    "passed": true,
+    "elapsed_ms": 261956,
+    "target_has_key_prompt": false
+  },
+  "automatic_update": {
+    "source": "0.1.0-beta.3",
+    "target": "0.1.0-beta.4",
+    "source_elf": "a19afb15b8cbe7a0d87095b98cddd91e59f20ca3cc2fbda7a708e86a3e9c8439",
+    "target_elf": "ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42",
+    "sha256": "4b8c25b67ea88c562a07d4173aa095818ccbe12257c8abc80b45da3526a84869",
+    "image_bytes": 840720,
+    "elapsed_ms": 257186,
+    "source_slot": "0x10000",
+    "target_slot": "0x150000",
+    "manual_key_required": false,
+    "key_file_supplied": false,
+    "target_has_key_prompt": false,
+    "settings_preserved": true,
+    "startup_accepted": true,
+    "outcome": "complete",
+    "session_guards": {
+      "missing_request_header": 403,
+      "cross_origin": 403
+    },
+    "stale_token_rejected": 403,
+    "admission": {
+      "wrongToken": 403,
+      "badSignature": 400,
+      "noConfirmation": 400,
+      "phase": "idle"
+    }
+  },
+  "first_attempt": {
+    "completed": false,
+    "last_consumed_bytes": 8064,
+    "failure": "Connection timeout; independent controller abort observed before activation. Underlying cause unestablished.",
+    "recovery": "One deliberate spare restart recovered healthy beta.3; a fresh explicit keyless retry completed."
+  },
+  "servo_operations": false,
+  "production_qualified": false,
+  "notes": "Fresh boot-scoped authorization is obtained automatically from the controller on the trusted home LAN. No key entry, pairing or saved browser credentials. Runtime tokens, keys, local addresses and session IDs excluded."
+}
