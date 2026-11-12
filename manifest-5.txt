@@ -1,0 +1,10 @@
+product=telescope-cover-ota-bench
+protocol=1
+layout=cover-4mb-v1
+settings=preserve-cover-app-v1
+source_build=4
+source_elf=ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42
+target_build=5
+target_elf=328881ff669f7f1c6ab227a214ffcf2d5d6385fdf83a6937cea7211a33efa084
+size=845072
+sha256=b9aa415f21d36de43db738cf49dd4604864bfa5e41fc92db436fea120064ac3f

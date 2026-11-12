@@ -24,6 +24,14 @@
       "manifest": "product=telescope-cover-ota-bench\nprotocol=1\nlayout=cover-4mb-v1\nsettings=preserve-cover-app-v1\nsource_build=3\nsource_elf=a19afb15b8cbe7a0d87095b98cddd91e59f20ca3cc2fbda7a708e86a3e9c8439\ntarget_build=4\ntarget_elf=ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42\nsize=840720\nsha256=4b8c25b67ea88c562a07d4173aa095818ccbe12257c8abc80b45da3526a84869\n",
       "signature": "d8a993e4d719b97f170c617ceb34b9a9cf0cbe7748110854f24ff19e76a36da76a86c0b01ccfb0b326d823b7e452664d3f996755294ddf446a5267a76cb4d1b7",
       "notes": "Automatic controller update authorization. No key entry, USB-console lookup or browser pairing. Explicit install confirmation, signed firmware validation and servo exclusion remain."
+    },
+    {
+      "build": 5,
+      "tag": "v0.1.0-beta.5",
+      "application": "bench-5.bin",
+      "manifest": "product=telescope-cover-ota-bench\nprotocol=1\nlayout=cover-4mb-v1\nsettings=preserve-cover-app-v1\nsource_build=4\nsource_elf=ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42\ntarget_build=5\ntarget_elf=328881ff669f7f1c6ab227a214ffcf2d5d6385fdf83a6937cea7211a33efa084\nsize=845072\nsha256=b9aa415f21d36de43db738cf49dd4604864bfa5e41fc92db436fea120064ac3f\n",
+      "signature": "bb224e3aa0ad8648011a9f9be8770ba57fd4d1f56856d4e4ce21ff686fab90d25a876fb25f597c4cd181807bc00e59d049c166abb00ed99bdc7bceda1a668b8d",
+      "notes": "Firmware updates are now in Configuration → Firmware updates. A compact blue Update available badge is centered between the Telescope Cover title and menu on all views when a compatible update exists; click it to open Firmware updates. Automatic checks default on and can be disabled with a remembered checkbox. Keyless signed OTA is retained. This test build still excludes servo/telescope operations. After installation confirms the reboot, refresh the page to load the new layout."
     }
   ]
 }

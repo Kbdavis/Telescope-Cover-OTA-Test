@@ -43,6 +43,21 @@
       "profile": "bench-ota-v1",
       "automatic_authorization": true,
       "servo_operations": false
+    },
+    {
+      "build": 5,
+      "version": "0.1.0-beta.5",
+      "elf": "328881ff669f7f1c6ab227a214ffcf2d5d6385fdf83a6937cea7211a33efa084",
+      "sha256": "b9aa415f21d36de43db738cf49dd4604864bfa5e41fc92db436fea120064ac3f",
+      "size": 845072,
+      "slot_headroom": 465648,
+      "profile": "bench-ota-v1",
+      "automatic_authorization": true,
+      "configuration_updates": true,
+      "global_update_badge": true,
+      "automatic_check_default": true,
+      "servo_operations": false,
+      "hardware_installed": false
     }
   ]
 }
