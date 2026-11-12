@@ -12,3 +12,11 @@ The controller generates its own update authorization key in NVS and prints it o
 The webpage downloads the image from GitHub Pages, then sends bounded chunks to the spare, which verifies the signed source transition and whole-image hash before activation. It confirms the new ELF, transaction, accepted startup and preserved application-settings record after reboot.
 
 Keep USB recovery available. These files are not a first-install factory image and must not be used to protect a telescope. Bench results do not qualify production OTA or servo safety.
+
+## Measured happy-path result
+
+**PASS — 2026-11-12.** The actual spare webpage discovered beta.2 through the public GitHub release list and Pages catalog, downloaded the signed image, transferred 839,440 bytes to the inactive slot, rebooted from beta.1/app0 into beta.2/app1, and confirmed the exact new ELF, matching durable transaction, accepted startup and unchanged application-settings record. Download/install/reboot confirmation took 254.291 seconds.
+
+Wrong device-key and invalid-signature requests were rejected before flash admission. See [sanitized acceptance data](acceptance.json), [update available](update-available.png), and [successful completion](update-complete.png).
+
+This result covers the isolated bench happy path. Power-loss/rollback fault injection, production motion admission, operational UI integration and unattended deployment remain separate qualification work.
