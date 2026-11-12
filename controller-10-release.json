@@ -1,0 +1,27 @@
+{
+  "kind": "owner-authorized-download-reboot-test",
+  "version": "0.1.0-beta.10",
+  "build": 10,
+  "source_build": 9,
+  "source_elf": "8f450f5c5d51c4bae23a6d22a71a4666f8ee55b9dd560c90478e75f864e291b1",
+  "source_commit": "3a83e6faf2cd6d469a41e5f20e9d6fab71c807eb",
+  "application": {
+    "product": "telescope-cover",
+    "profile": "web_control",
+    "protocol": 1,
+    "settings": 5,
+    "handoff": 1,
+    "size": 1183664,
+    "sha256": "efb993c7e487d82b0d625d747e0c6e3661e47e69cf7ab9dc487aeeba49648240",
+    "md5": "9c76c53b8cbb58f2f4b19242096801d5",
+    "elf": "920b19fe95f2808fa29c90983847d1edcbf1a94b393833d940914367f7437bc4"
+  },
+  "functional_changes": false,
+  "production_approved": false,
+  "hardware_qualification": "powered-spare OTA/reboot/rollback pending",
+  "startup_policy": "inspect-only-v1",
+  "motion": "native-multiturn-v1",
+  "auth": "automatic boot-scoped home-LAN authorization",
+  "settings": "preserve-cover-v1",
+  "owner_authorized_test_publication": true
+}

@@ -37,4 +37,8 @@ The real installed beta.4 page has been checked read-only and advertises beta.5 
 
 ## Complete controller candidates
 
-The complete controller is being qualified separately from the isolated bench firmware. Its `controller-index.json` catalog is intentionally empty until powered-servo update, startup and recovery checks pass. Bench release success does not qualify the complete controller for production installation. No complete-controller firmware is published here yet.
+The complete controller is being qualified separately from the isolated bench firmware. Owner-requested beta.10 is a public **download/install/reboot test prerelease**, with no functional changes from beta.9. Its signed `controller-index.json` entry targets only the exact full-controller beta.9 ELF. Use Configuration → Firmware updates → Check now on that controller. It is not a qualified production release.
+
+The installed receiver still requires a powered, verified native servo and honest stationary CLOSED/calibration evidence. An unpowered spare will reject installation at admission; no safety checks have been bypassed. Powered full-workload update/reboot/rollback and cold-start qualification remain pending. The production controller has not been modified.
+
+`controller-10-source.tar.gz` contains the exact curated firmware source; `controller-10-notices.zip` retains project and dependency notices. `controller-10-release.json` records the source, image hashes and test-only scope. The original bench catalog and binaries retain their existing authority and identities.

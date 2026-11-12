@@ -1,0 +1,12 @@
+product=telescope-cover
+protocol=browser-signed-v1
+layout=cover-4mb-v1
+motion=native-multiturn-v1
+startup=inspect-only-v1
+settings=preserve-cover-v1
+source_build=9
+source_elf=8f450f5c5d51c4bae23a6d22a71a4666f8ee55b9dd560c90478e75f864e291b1
+target_build=10
+target_elf=920b19fe95f2808fa29c90983847d1edcbf1a94b393833d940914367f7437bc4
+size=1183664
+sha256=efb993c7e487d82b0d625d747e0c6e3661e47e69cf7ab9dc487aeeba49648240

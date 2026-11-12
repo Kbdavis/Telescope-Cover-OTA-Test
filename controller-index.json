@@ -1,4 +1,13 @@
 {
   "schema": "telescope-cover-controller-catalog/1",
-  "releases": []
+  "releases": [
+    {
+      "build": 10,
+      "tag": "v0.1.0-beta.10",
+      "application": "controller-10.bin",
+      "manifest": "product=telescope-cover\nprotocol=browser-signed-v1\nlayout=cover-4mb-v1\nmotion=native-multiturn-v1\nstartup=inspect-only-v1\nsettings=preserve-cover-v1\nsource_build=9\nsource_elf=8f450f5c5d51c4bae23a6d22a71a4666f8ee55b9dd560c90478e75f864e291b1\ntarget_build=10\ntarget_elf=920b19fe95f2808fa29c90983847d1edcbf1a94b393833d940914367f7437bc4\nsize=1183664\nsha256=efb993c7e487d82b0d625d747e0c6e3661e47e69cf7ab9dc487aeeba49648240\n",
+      "signature": "c021c49dc7d836c60ddfa3fab8a71172760374fed5b0f481dd573a0bb9401f7b00db4e72e96c3a728f2b6ea5d77707928cfb09f59a5a055d3892a08e7a58c6b7",
+      "notes": "Download/install/reboot test release. No functional changes from beta.9. For the spare controller only; production qualification remains pending. Existing stationary CLOSED/native-servo maintenance checks still apply."
+    }
+  ]
 }
