@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0-beta.12",
+  "usb_source": "0.1.0-beta.11",
+  "source_commit": "fcd130223ebc2ff30abeaa61c5bd9e1d0fe63db2",
+  "application": {
+    "product": "telescope-cover",
+    "profile": "web_control",
+    "protocol": 1,
+    "settings": 5,
+    "handoff": 1,
+    "size": 1187888,
+    "sha256": "b114b063b3ff41a67480001b85e2a70904f4e5d707db9d46de44f1cd3102658e",
+    "md5": "e7f9954775a5cd023441331797981290",
+    "elf": "7f0e2bca8c13bbe476452bd922b1ebf3a52912dbbc23a06400467970074d9c21"
+  },
+  "readiness": {
+    "passed": true,
+    "simulated": false,
+    "source_version": "0.1.0-beta.11",
+    "target_version": "0.1.0-beta.12",
+    "source_elf": "a01f2b79fe66a3dfcc6b459b8536ef68627ddc542c543a493b044714fc31db21",
+    "target_elf": "7f0e2bca8c13bbe476452bd922b1ebf3a52912dbbc23a06400467970074d9c21",
+    "update_available": true,
+    "header_badge_visible": true,
+    "configuration_navigation": true,
+    "confirmation_unchecked": true,
+    "install_disabled_without_confirmation": true,
+    "public_browser_download": {
+      "size": 1187888,
+      "elf": "7f0e2bca8c13bbe476452bd922b1ebf3a52912dbbc23a06400467970074d9c21"
+    },
+    "controller_writes": 0,
+    "installation_performed": false,
+    "reboot_performed": false,
+    "boot_unchanged": true,
+    "requests": 17,
+    "errors": []
+  },
+  "missing_warning": {
+    "passed": true,
+    "missing_warning_status": 400,
+    "user_message": "Before installing, check the warning box to confirm the cover or mechanism is secured for restart. Servo verification is not required.",
+    "transaction_started": false,
+    "flash_written": false,
+    "rebooted": false
+  },
+  "installation_performed": false,
+  "owner_installation_pending": true,
+  "production_changed": false,
+  "servo_registers_written": false
+}
