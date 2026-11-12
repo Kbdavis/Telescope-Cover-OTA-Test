@@ -34,3 +34,7 @@ Beta.5 is a signed OTA upgrade from the exact beta.4 ELF. It opens on Overview, 
 The UI was tested in an isolated real-browser fixture at 1440, 1024 and 390 pixels; its future-release notification used synthetic beta.6 metadata only for rendering tests. No beta.6 artifact was published. Beta.5 is left for the owner to install with the current beta.4 page; it has not been flashed by automation. This remains the isolated update-test build: calibration, servo/telescope motion and operational configuration editing remain unavailable.
 
 The real installed beta.4 page has been checked read-only and advertises beta.5 from the public release/catalog. No controller update or reboot was performed. [Validation details](validation-beta5.json) distinguish UI fixtures from owner-pending hardware installation.
+
+## Complete controller candidates
+
+The complete controller is being qualified separately from the isolated bench firmware. Its `controller-index.json` catalog is intentionally empty until powered-servo update, startup and recovery checks pass. Bench release success does not qualify the complete controller for production installation. No complete-controller firmware is published here yet.
