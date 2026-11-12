@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0-beta.5",
+  "elf": "328881ff669f7f1c6ab227a214ffcf2d5d6385fdf83a6937cea7211a33efa084",
+  "sha256": "b9aa415f21d36de43db738cf49dd4604864bfa5e41fc92db436fea120064ac3f",
+  "size": 845072,
+  "source_version": "0.1.0-beta.4",
+  "current_receiver_advertises_update": true,
+  "controller_mutations": 0,
+  "board_updated": false,
+  "owner_will_install": true,
+  "validation": {
+    "offline_release_gate": "passed",
+    "ui_browser_fixture": {
+      "passed": true,
+      "fixture_only": true,
+      "hardware_updated": false,
+      "simulated_future_release": 6,
+      "tested": [
+        "small blue centered text badge",
+        "badge on all four views",
+        "click opens Configuration and focuses Firmware updates",
+        "automatic checking default on",
+        "preference persists off across reload",
+        "manual checks work while automatic disabled",
+        "reenabling resumes checks",
+        "no badge without a compatible update",
+        "1440/1024/390 layout",
+        "no key field or write requests"
+      ],
+      "badge": {
+        "text": "Update available",
+        "center": 720,
+        "width": 120.40625,
+        "height": 28,
+        "bg": "rgb(23, 111, 208)",
+        "between": true
+      }
+    },
+    "real_receiver_readonly_check": {
+      "passed": true,
+      "real_controller": true,
+      "installed_version": "0.1.0-beta.4",
+      "offered_version": "0.1.0-beta.5",
+      "source_elf": "ed3f7046be0ee332161f0a5b7c165b1c853ae5662242150c50a649c0eab0be42",
+      "target_elf": "328881ff669f7f1c6ab227a214ffcf2d5d6385fdf83a6937cea7211a33efa084",
+      "source_boot_unchanged": true,
+      "controller_mutations": 0,
+      "installation_started": false,
+      "owner_will_install": true
+    }
+  },
+  "new_ui_on_device_acceptance": "pending owner installation",
+  "servo_operations": false,
+  "production_qualified": false
+}
